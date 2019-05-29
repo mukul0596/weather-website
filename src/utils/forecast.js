@@ -12,7 +12,8 @@ function forecast(lattitude, longitude, callback) {
             callback(undefined, {
                 summary: body.daily.data[0].summary,
                 temprature: body.currently.temperature,
-                precipProbability: body.currently.precipProbability
+                precipProbability: body.currently.precipProbability,
+                windSpeed: body.daily.data[0].windSpeed
             });
         }
     });
