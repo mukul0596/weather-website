@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
 
             } else {
                 let responseContainer = document.createElement('p');
-                let response = document.createTextNode("Location: " + data.location + "\n" + "Summary: " + data.summary + "\n" + "Temprature: " + data.temprature + "\n" + "Chance of rain: " + data.precipProbability + "%\n" + "Wind Speed: " + data.windSpeed);
+                let response = document.createTextNode("Location: " + data.location + "\n" + "Summary: " + data.summary + "\n" + "Temprature: " + data.temprature + " \xB0C \n" + "Chance of rain: " + data.precipProbability + " %\n" + "Wind Speed: " + data.windSpeed + " m/s");
                 responseContainer.setAttribute('style', 'color: #333333; white-space: pre');
                 responseContainer.appendChild(response);
                 resultArea.replaceChild(responseContainer, resultArea.firstChild);
